@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alejandro Rodriguez | Desarrollador Frontend React</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="Portfolio de Alejandro Rodriguez">
+</head>
+
+<body>
+
+    <!-- NAVBAR --> 
+    <nav class="navbar">
+        <div class="logo">Hola! Soy Alejandro Rodriguez</div>
+
+        <ul class="menu">
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#conocimientos">Conocimientos</a></li>
+            <li><a href="#proyectos">Mis proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+
+        <button class="btn-nav" onclick="window.open('tu-cv.pdf', '_blank')">Mi CV</button>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>
+                Desarrollador<br>
+                <span>FrontEnd</span> React
+            </h1>
+
+            <p>
+                Soy un desarrollador frontend con experiencia en la creación
+                de proyectos web. Mi capacidad para trabajar
+                en equipo y desarrollar soluciones eficientes me permite
+                brindar experiencias excepcionales al usuario final.
+            </p>
+
+            <div class="hero-buttons">
+                <button class="btn-primary" onclick="scrollToSection('proyectos')">Ver proyectos</button>
+                <button class="btn-secondary" onclick="scrollToSection('contacto')">Contactar</button>
+            </div>
+        </div>
+
+        <div class="hero-img">
+            <img src="assets/img/Alejo.jpg" alt="Alejandro Rodriguez - Desarrollador Frontend">
+        </div>
+    </section>
+
+    <!-- SOBRE MÍ -->
+    <section class="section sobre-mi" id="sobre-mi">
+        <h2 class="section-title">Sobre mí</h2>
+        <div class="sobre-mi-content">
+            <p>
+                Soy un desarrollador frontend apasionado por crear experiencias web 
+                intuitivas y atractivas. Con conocimientos sólidos en React, JavaScript, 
+                HTML y CSS, me especializo en convertir diseños en código limpio y funcional.
+            </p>
+            <p>
+                Mi enfoque se centra en la calidad del código, la accesibilidad y el 
+                rendimiento, siempre buscando las mejores prácticas y tecnologías modernas 
+                para crear aplicaciones web excepcionales.
+            </p>
+        </div>
+    </section>
+
+    <!-- CONOCIMIENTOS -->
+    <section class="section conocimientos" id="conocimientos">
+        <h2 class="section-title">Conocimientos</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-icon">⚛️</div>
+                <h3>React</h3>
+                <p>Hooks, Context API, componentes reutilizables</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">📜</div>
+                <h3>JavaScript</h3>
+                <p>ES6+, async/await, programación funcional</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">🎨</div>
+                <h3>CSS3</h3>
+                <p>Flexbox, Grid, animaciones, responsive design</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">📱</div>
+                <h3>HTML5</h3>
+                <p>Semántica, accesibilidad, SEO</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">🔧</div>
+                <h3>Git</h3>
+                <p>Control de versiones, GitHub, colaboración</p>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">💡</div>
+                <h3>UI/UX</h3>
+                <p>Diseño centrado en el usuario</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section class="section proyectos" id="proyectos">
+        <h2 class="section-title">Mis proyectos</h2>
+        <div class="proyectos-grid">
+            
+            <div class="proyecto-card">
+                <div class="proyecto-img">
+                    <div class="proyecto-placeholder">🚀</div>
+                </div>
+                <div class="proyecto-info">
+                    <h3>Proyecto 1</h3>
+                    <p>Aplicación web desarrollada con React y Firebase. Incluye autenticación, base de datos en tiempo real y diseño responsive.</p>
+                    <div class="proyecto-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Firebase</span>
+                        <span class="tech-tag">CSS</span>
+                    </div>
+                    <div class="proyecto-links">
+                        <a href="#" class="btn-small">Ver demo</a>
+                        <a href="#" class="btn-small btn-outline">Código</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="proyecto-card">
+                <div class="proyecto-img">
+                    <div class="proyecto-placeholder">💼</div>
+                </div>
+                <div class="proyecto-info">
+                    <h3>Proyecto 2</h3>
+                    <p>Dashboard administrativo con gráficas interactivas, gestión de datos y panel de control completo.</p>
+                    <div class="proyecto-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Chart.js</span>
+                        <span class="tech-tag">API Rest</span>
+                    </div>
+                    <div class="proyecto-links">
+                        <a href="#" class="btn-small">Ver demo</a>
+                        <a href="#" class="btn-small btn-outline">Código</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="proyecto-card">
+                <div class="proyecto-img">
+                    <div class="proyecto-placeholder">🎮</div>
+                </div>
+                <div class="proyecto-info">
+                    <h3>Proyecto 3</h3>
+                    <p>Landing page moderna y responsive para startup tecnológica, con animaciones y diseño minimalista.</p>
+                    <div class="proyecto-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <div class="proyecto-links">
+                        <a href="#" class="btn-small">Ver demo</a>
+                        <a href="#" class="btn-small btn-outline">Código</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="section contacto" id="contacto">
+        <h2 class="section-title">¿Hablamos?</h2>
+        <p class="contacto-subtitle">Estoy disponible para proyectos freelance y oportunidades laborales</p>
+        <div class="contacto-grid">
+            <a href="mailto:alejandrorodriguezhincapie2006@gmail.com" class="contacto-card">
+                <div class="contacto-icon">📧</div>
+                <h3>Email</h3>
+                <p>alejandrorodriguez@gmail.com</p>
+            </a>
+            <a href="https://github.com/alejo-rh" target="_blank" class="contacto-card">
+                <div class="contacto-icon">💻</div>
+                <h3>GitHub</h3>
+                <p>https://github.com/Alejo-Rh</p>
+            </a>
+            <a href="https://www.linkedin.com/in/alejandro-rodriguez-417ba9373/" target="_blank" class="contacto-card">
+                <div class="contacto-icon">💼</div>
+                <h3>LinkedIn</h3>
+                <p>Conecta conmigo</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025 Alejandro Rodriguez. Hecho con 💜 y React</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
